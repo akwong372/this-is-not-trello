@@ -1,8 +1,10 @@
 import { CREATE_TODO } from './actionType';
 
-export default function createTodo(text){
+export default function createTodo(todoId, todoText){
   return {
     type: CREATE_TODO,
-    text
+    completed: false,
+    todoId,
+    todoText
   }
 };
